@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    width: 9999px;
+}
+
+#div{
+    height:700px;
+    width:1900px;
+    margin:0;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+}
+
+.div3{
+    background-color: white;
+    
+}
+
+.div2{
+    background-color: rgb(0, 102, 255);
+    width: 250px;
+    display: inline-block;
+    z-index: 1;
+}
+
+
+.div4{
+    background-color: rgb(0, 102, 255);
+    z-index: 2;
+    display: inline-block;
+    z-index: 2;
+}
+
+.horizontal-scroll-wrapper {
+    width: 100px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+    width: 100px;
+    height: 100px;
+}
+
+.horizontal-scroll-wrapper {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+  }
+
+.horizontal-scroll-wrapper > div {
+    
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
