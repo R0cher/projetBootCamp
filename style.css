@@ -1,21 +1,19 @@
 body{
-    width: 9999px;
+    
     margin: 0;
-
-}
-
-.scrollhor{
-    overflow-x:scroll;
+    position: absolute;
+    width: 9999px;
 }
 
 #div{
     height:700px;
     width:1900px;
     margin:0;
-    position: relative;
     display: inline-block;
     top: 0;
     left: 0;
+    position: fixed;
+    
 }
 
 
