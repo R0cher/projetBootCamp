@@ -41,7 +41,7 @@
             return;
         }
         
-        var elements = [];
+        var elements = ['.div, .div1, .div2, .div3, .div4'];
         var longest = 0;
         
         // Extract all selected elements from dom and save them into an array

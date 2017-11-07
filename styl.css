@@ -1,0 +1,27 @@
+.image1{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.image2{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.image3{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.image4{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+body{
+  min-height: 100%;
+}
+
+.px-carousel{
+  margin-top: 50px;
+}

@@ -1,11 +1,14 @@
-$.jInvertScroll(['.div, .div1, .div2, .div3, .div4'], {
-	width: 'auto',	// Page width (auto or int value)
-	height: 'auto',	// Page height (the shorter, the faster the scroll)
-	onScroll: function(percent) {
-		// Callback function that will be called each time the user
-		// scrolls up or down, useful for animating other parts
-		// on the page depending on how far the user has scrolled down
-		// values go from 0.0 to 1.0 (with 4 decimals precision)
-	}
-});
+var myIndex = 1;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
