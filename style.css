@@ -1,27 +1,57 @@
-body{
-    
-    margin: 0;
-    position: absolute;
-    width: 9999px;
-}
-
-#div{
-    height:700px;
-    width:1900px;
+body {
     margin:0;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    position: fixed;
-    
-}
+    font-family:Georgia;
+    text-align: center;
+  }
+  #container .box {
+    width:100vw;
+    height:100vh;
+    display:inline-block;
+    position:relative;
+  }
+  #container .box > div {
+    width:100px;
+    height:100px;
+    font-size:96px;
 
-
-.div2{
-    background-color: rgb(0, 102, 255);
-}
-
-
-.div4{
-    background-color: rgb(0, 102, 255);
-}
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-50px 0 0 -50px;
+    line-height:.7;
+    font-weight:bold;
+  }
+  #container {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+    background-color:#999;
+    position:absolute;
+    width:100vh;
+    height:100vw;
+  }
+  #container2 {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    white-space:nowrap;
+    font-size:0;
+  }
+  
+  .one {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 132, 255);
+  }
+  .two {
+    background-color: rgb(0, 132, 255);
+    color:#FFF;
+  }
+  .three {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 132, 255);
+  }
+  .four {
+    background-color: rgb(0, 132, 255);
+    color:#FFF;
+  }
+  
