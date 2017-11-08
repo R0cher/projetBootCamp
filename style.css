@@ -3,6 +3,12 @@ body{
     padding: 0px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ 
+p{
+    font-size: 2.5vh;
 }
 navbar{
     height: 50px;
@@ -31,7 +37,9 @@ navbar ul li {
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: #ffffff;
+    color: #ffffff;
+    border: 1px;
+    border-color:rgba(0, 131, 163, 0.521);
 }
 
 navbar ul li:hover {
@@ -73,31 +81,37 @@ navbar ul li:hover::before {
 }
 
 
-
-
 .logo{
     height: 10em;
     width: auto;
 }
 #content{
     width:100%;
-    margin: 0px;
-    padding: 0px;
+    margin-top: -0.3em;
+    padding:0px;
     color: white;
     background-color: #24B4CE;
     display: inline-block;
 }
 .chapeau{
-    height:20vh;
+    height:10vh;
+}
+.threebasics{
+    width: 30vh;
+    height: auto;
+}
+.colonne{
+    display: inline-block;
+    width:40%;
+    position: relative;
 }
 .firstHole{
     overflow: hidden;
-    height: 20%;
+    height: 40%;
     width:100%;
     border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
+    border-bottom-left-radius: 110%;
     background-color: rgb(255, 255, 255);
-    
 }
 .hole{
     overflow: hidden;
@@ -117,25 +131,31 @@ navbar ul li:hover::before {
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 100%;
-    background-image: url("img/groupe.jpg");
+    background-image: url("img/photo4.jpg");
     background-position: 15% 45%;
     background-size: cover;
 }
-
 .div0{
-    height:1000px;
+    display: inline-block;
 }
-
 .div1{
-    height:1000px;
+    display: inline-block;
 }
 
 h1{
     text-transform: uppercase;
-    font-size: 10vh;
+    font-size: 7vh;
     margin-bottom: 1px;
 }
-
 h2{
-    font-size: 7vh;
+    font-size: 5vh;
+}
+.holetest{
+    width: 100%;
+    padding:0;
+    background-image: url("http://ww1.hdnux.com/photos/07/30/21/1934440/11/1024x1024.jpg");
+    background-size: cover;
+}
+.transpa{
+    width:100%;
 }
