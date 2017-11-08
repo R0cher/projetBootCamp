@@ -10,15 +10,17 @@ navbar{
     top: 0px;
     display: block;
     position: fixed;
-    background-color: rgba(0, 131, 163, 0.521);
+    background-color: transparent;
     text-align: right;
+
 }
 navbar ul li{
     display: inline-block;
     margin-right: 20px;
     text-transform: uppercase;
-    color: white;
+    color: #24B4CE;
     font-size: 2vh;
+
 }
 
 .logo{
