@@ -1,18 +1,43 @@
-<<<<<<< HEAD
-var myIndex = 1;
-carousel();
+//SCROLL
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+var didScroll;
+var lastScrollTop = 0;
+var delta = 2;
+var navbarHeight = $('header').outerHeight();
+
+$(document).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').fadeOut(600);
+        
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').fadeIn(600);
+
+        }
+        
+    }
+    
+    lastScrollTop = st;
 }
-=======
-$.jInvertScroll(['.div', '.div1', '.div2', '.div3']);
->>>>>>> 1c60764b5c5c1cb30a56eb4692e0b692406c0240

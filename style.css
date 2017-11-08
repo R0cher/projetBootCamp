@@ -4,28 +4,91 @@ body{
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
+
 navbar{
     height: 50px;
     width: 100%;
     top: 0px;
-    display: block;
-    position: fixed;
-    background-color: transparent;
+    display: inline-block;
+    background-color: turquoise;
     text-align: right;
 
 }
-navbar ul li{
-    display: inline-block;
+
+.nav-down{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: block;
+    text-align: right;
+}
+
+
+navbar ul li {
+    outline: none;
     margin-right: 20px;
     text-transform: uppercase;
     color: #24B4CE;
     font-size: 2vh;
+	text-decoration: none;
+	position: relative;
+	font-size: 2vh;
+	line-height: 1;
+	color: #ffffff;
+	display: inline-block;
+}
 
+navbar ul li {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #ffffff;
+}
+
+navbar ul li:hover {
+    color: #3D3D3C;
+    cursor: pointer;
+}
+
+navbar ul li::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	top: 50%;
+	margin-top: -2px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+navbar ul li:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+navbar ul li::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+navbar ul li:hover::before {
+	width: 100%;
 }
 
 .logo{
-    height: 40vh;
+    height: 10em;
     width: auto;
+    margin-top: 90px;
 }
 #content{
     width:100%;
@@ -87,3 +150,6 @@ h1{
 h2{
     font-size: 7vh;
 }
+
+
+
