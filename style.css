@@ -10,20 +10,32 @@ body{
 p{
     font-size: 2.5vh;
 }
+
+
 navbar{
     height: 50px;
     width: 100%;
     top: 0px;
-    display: block;
+    display: inline-block;
+    background-color: rgba(0, 131, 163, 0.5);
+    text-align: right;
+
+}
+
+.nav-down{
     position: fixed;
-    background-color: rgba(0, 131, 163, 0.521);
+    width: 100%;
+    top: 0px;
+    display: block;
     text-align: right;
 }
 
 navbar ul li {
     outline: none;
-    margin-right: 20px;
+    margin-right: 40px;
     text-transform: uppercase;
+    color: #24B4CE;
+    font-size: 2vh;
 	text-decoration: none;
 	position: relative;
 	font-size: 2vh;
@@ -39,7 +51,7 @@ navbar ul li {
 	line-height: 0.75;
     color: #ffffff;
     border: 1px;
-    border-color:rgba(0, 131, 163, 0.521);
+    border-color:rgba(0, 131, 163);
 }
 
 navbar ul li:hover {
@@ -50,7 +62,7 @@ navbar ul li:hover {
 navbar ul li::after {
 	content: '';
 	position: absolute;
-	height: 3px;
+	height: 5px;
 	width: 100%;
 	top: 50%;
 	margin-top: -2px;
@@ -80,10 +92,10 @@ navbar ul li:hover::before {
 	width: 100%;
 }
 
-
 .logo{
     height: 10em;
     width: auto;
+    margin-top: 90px;
 }
 #content{
     width:100%;
@@ -97,7 +109,7 @@ navbar ul li:hover::before {
     height:10vh;
 }
 .threebasics{
-    width: 30vh;
+    width: 50vh;
     height: auto;
 }
 .colonne{
@@ -107,7 +119,7 @@ navbar ul li:hover::before {
 }
 .firstHole{
     overflow: hidden;
-    height: 40%;
+    height: 70%;
     width:100%;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 110%;
@@ -150,6 +162,8 @@ h1{
 h2{
     font-size: 5vh;
 }
+
+
 .holetest{
     width: 100%;
     padding:0;
