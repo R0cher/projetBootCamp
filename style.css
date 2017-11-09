@@ -131,15 +131,17 @@ navbar ul li a:hover::before {
     width: auto;
     border-radius: 50px;
 }
-
+#content ul li{
+    display:inline-block;
+}
 #contentBtn{
     width:100px;
     height:100px;
     border-radius:100%;
     background-color:rgb(26, 127, 145);
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
+    position: relative;
+    display:inline-block;
+    margin: 5px;
 }
 
 .firstHole{
