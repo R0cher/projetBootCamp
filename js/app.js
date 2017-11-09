@@ -41,3 +41,26 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+const formulaire= $('#formulaire');
+let formName = $("#nom");
+let formMail= $("#courriel");
+let formMsg= $("#message");
+let formButton= $("formBtn");
+
+formulaire.submit(sendform);
+
+function sendform (event){
+    if(formName.val().length < 5){
+      alert("Vous n'avez pas indiqué votre Nom et Prénom.");
+    }
+    else if(formMail.val().length < 5){
+        alert("Vous n'avez pas indiqué votre adresse mail.")
+    }
+    else if(formMail.val().length < 5){
+        alert("Vous n'avez pas écrit de message.")
+    }
+    else{
+        
+    }
+}

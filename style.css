@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Questrial', sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -18,6 +18,7 @@ navbar{
     display: inline-block;
     background-color: rgba(0, 131, 163, 0.5);
     text-align: right;
+    z-index: 999;
 
 }
 
@@ -27,7 +28,14 @@ navbar{
     top: 0px;
     display: block;
     text-align: right;
+<<<<<<< HEAD
     z-index: 2;
+=======
+    z-index: 9999;
+}
+a{
+    color:inherit;
+>>>>>>> da20da20d7529a2914d8b71cef766ed45be19b40
 }
 
 navbar ul li {
@@ -54,6 +62,7 @@ navbar ul li {
     border-color:rgba(0, 131, 163);
 }
 
+<<<<<<< HEAD
 navbar ul li:hover {
     color: rgb(255, 255, 244);
     cursor: pointer;
@@ -61,6 +70,15 @@ navbar ul li:hover {
 
 navbar ul li::after {
     
+=======
+navbar ul li a:hover {
+    color: #3D3D3C;
+    cursor: pointer;
+}
+
+navbar ul li a::after {
+	content: '';
+>>>>>>> da20da20d7529a2914d8b71cef766ed45be19b40
 	position: absolute;
 	height: 5px;
 	width: 100%;
@@ -73,11 +91,11 @@ navbar ul li::after {
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-navbar ul li:hover::after {
+navbar ul li a:hover::after {
 	transform: translate3d(100%,0,0);
 }
 
-navbar ul li::before {
+navbar ul li a::before {
 	content: attr(data-letters);
 	position: absolute;
 	z-index: 2;
@@ -88,7 +106,7 @@ navbar ul li::before {
 	transition: width 0.4s 0.3s;
 }
 
-navbar ul li:hover::before {
+navbar ul li a:hover::before {
 	width: 100%;
 }
 
@@ -96,13 +114,20 @@ navbar ul li:hover::before {
     height: 10em;
     width: auto;
     margin-top: 90px;
+<<<<<<< HEAD
     margin-bottom: 15px;
 }
 #content{
     margin: 0px 80px;
     width:100%;
+=======
+    margin-bottom: 10px;
+}
+#content{
+    width: 80%;
+>>>>>>> da20da20d7529a2914d8b71cef766ed45be19b40
     margin-top: -0.3em;
-    padding:0px;
+    padding-bottom:20px;
     color: white;
     background-color: #24B4CE;
     display: inline-block;
@@ -111,40 +136,45 @@ navbar ul li:hover::before {
     height:10vh;
 }
 .threebasics{
-    width: 50vh;
+    width: 50%;
     height: auto;
 }
 .colonne{
     display: inline-block;
     width:40%;
     position: relative;
+    text-align: left;
+    text-indent: 100px;
 }
+.colonne .imghtml{
+    max-width: 400px;
+    display:block;
+    width: auto;
+    border-radius: 50px;
+}
+
 .firstHole{
     overflow: hidden;
-    height: 70%;
+    height: 100%;
     width:100%;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 110%;
+    border-bottom-right-radius: 150%;
+    border-bottom-left-radius: 150%;
     background-color: rgb(255, 255, 255);
 }
 .hole{
     overflow: hidden;
     height: 70vh;
     width:auto;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 100%;
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 90%;
     background-color: rgb(255, 255, 255);
 }
 .secondHole{
     overflow: hidden;
     height: 70vh;
     width:100%;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 100%;
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 90%;
     background-image: url("img/photo4.jpg");
     background-position: 15% 45%;
     background-size: cover;
@@ -158,8 +188,9 @@ navbar ul li:hover::before {
 
 h1{
     text-transform: uppercase;
-    font-size: 7vh;
     margin-bottom: 1px;
+    font-size:  7vh;
+    max-width: 100%;
 }
 h2{
     font-size: 5vh;
@@ -167,13 +198,45 @@ h2{
 
 
 .holetest{
-    width: 100%;
+    width: 80%;
     padding:0;
     background-image: url("http://ww1.hdnux.com/photos/07/30/21/1934440/11/1024x1024.jpg");
     background-size: cover;
+    display: inline-block;
 }
 .transpa{
-    width:100%;
+    width:80%;
+}
+
+#basdepage{
+    width: 80%;
+    height:400px;
+    margin-top: -0.3em;
+    padding:0px;
+    color: white;
+    background-color: rgb(18, 101, 116);
+    display: inline-block;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5), 0px -10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#form{
+    display: inline-block;
+    width: 200px;
+}
+label
+{
+	display: block;
+}
+button{
+    background-color: #24B4CE;
+    border: 1px solid rgb(20, 109, 124);
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ulcss{
