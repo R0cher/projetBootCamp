@@ -1,0 +1,16 @@
+diff a/style.css b/style.css	(rejected hunks)
+@@ -28,7 +28,14 @@
+     top: 0px;
+     display: block;
+     text-align: right;
++<<<<<<< HEAD
+     z-index: 2;
++=======
++    z-index: 9999;
++}
++a{
++    color:inherit;
++>>>>>>> da20da20d7529a2914d8b71cef766ed45be19b40
+ }
+ 
+ navbar ul li {
