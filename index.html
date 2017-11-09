@@ -6,27 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TechnicalBootcamp 2017</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="nav-down">
     <navbar>
         <ul>
-            <li>Présentation</li>
-            <li>HTML 5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>Projet final</li>
+            <li><a href="#ancrepresentation">Présentation</a></li>
+            <li><a href="#ancrehtml">HTML 5</a></li>
+            <li><a href="#ancrecss">CSS3</a></li>
+            <li><a href="#ancrejava">Javascript</a></li>
+            <li><a href="#ancreprojet">Projet final</a></li>
         </ul>
     </navbar>
     </header>
-    <img class="logo" src="img/logoSharify.png" alt="Logo de Sharify"/>
+    <img class="logo" src="img/logoSharify.png" alt="Logo de Sharify"/><br>
     <div id="content" class="chapeau">
         <div class="firstHole"></div>
     </div>
     <div id="content" class="div0">
-        <h1>Technical BootCamp 2017</h1>
+        <h1 id="ancrepresentation">Technical BootCamp 2017</h1>
         <h2>Une initiation au web developement</h2>
         <img class="threebasics" src="img/3bases.png" alt="Les 3 languages étudiés"/><br>
         <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
@@ -51,35 +52,40 @@
         <div class="secondHole"></div>
     </div>
     <div id="content" class="div1">
-            <h1>HTML5: Architecture</h1>
-            <h2>Une initiation au web developement</h2>
-            <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
-                    
-                    Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                  
-                    Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
-                    
-                    Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines Aboraeque amnis herbidas ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere Romana. absque ullo egressus effectu deinde tabescebat immobilis.
-                    
-                    Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.</p>
+            <h1 id="ancrehtml">HTML5</h1>
+            <h2>L'architecture de la page</h2>
+            <div class="colonne">
+                <p>
+                    Lors de notre première semaine, nous avons commencé notre formation par l'apprentissage du language HTML 5.<br>
+                    Language de base d'un website, le HTML va lui donner sa structure, son architecture. Au travers de balises tapées dans le code, le navigateur interpretera différentes propriétés que l'on souhaitera donner à des éléments.<br> 
+                </p> 
+                    <ul style="text-indent:0px;" >
+                        <li>Fixer une architecture à la page</li>
+                        <li>Donner de la forme au texte</li>
+                        <li>Attribuer des classes et des IDs aux éléments</li>
+                    </ul>
+                <br>
+                <h3>La structure d'une page HTML</h3>
+                    <ul style="text-indent:0px;" >
+                            <li>Le doctype</li>
+                            <li>Le "Head"</li>
+                            <li>Le "Body"</li>
+                            
+                    </ul>
+                    <br>
+                    <img class="imghtml" src="img/Capturehtml.png" alt="Exemple de code html"/>
+                </p>
             </div> 
-            <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
-                    
-                    Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                  
-                    Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
-                    
-                    Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines Aboraeque amnis herbidas ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere Romana. absque ullo egressus effectu deinde tabescebat immobilis.
-                    
-                    Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.</p>
+            <div class="colonne">
+                    DGFSDFDSF
             </div> 
     </div>
     <div class="holetest">
-        <img src="img/hole1.png" class"transpa" style="width:100%;">
+        <center><img src="img/hole1.png" class"transpa" style="width:100%;"></center>
     </div>
     <div id="content" class="div2">
-            <h1>CSS3: Le style</h1>
-            <h2>Une initiation au web developement</h2>
+            <h1 id="ancrecss">CSS3</h1>
+            <h2>Le style de la page</h2>
             <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
                     
                     Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
@@ -102,8 +108,8 @@
             <div class="hole" ></div>
     </div>
     <div id="content" class="div3">
-            <h1>Javascript: Animations et Actions</h1>
-            <h2>Une initiation au web developement</h2>
+            <h1 id="ancrejava">Javascript</h1>
+            <h2>Actions et animations</h2>
             <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
                     
                     Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
@@ -128,7 +134,52 @@
     <div class="holetest">
         <img src="img/hole1.png" class"transpa" style="width:100%;">
     </div>
-
+    <div id="content" class="div3">
+        <h1 id="ancreprojet">Projet final</h1>
+        <h2>Les résultats d'un mois de formation</h2>
+        <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
+                
+                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
+              
+                Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
+                
+                Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines Aboraeque amnis herbidas ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere Romana. absque ullo egressus effectu deinde tabescebat immobilis.
+                
+                Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.</p>
+        </div> 
+        <div class="colonne"><p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et in eois tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius post Nepotiani exitium, saeviens per urbem aeternam urebat cuncta Bellona, ex primordiis minimis ad clades excita luctuosas, quas obliterasset utinam iuge silentium! ne forte paria quandoque temptentur, plus exemplis generalibus nocitura quam delictis.
+                
+                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
+              
+                Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
+                
+                Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines Aboraeque amnis herbidas ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere Romana. absque ullo egressus effectu deinde tabescebat immobilis.
+                
+                Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.</p>
+        </div> 
+    </div>
+    <div id="basdepage">
+        <h2>Interessé(e) par la formation?<br> Contacte Sharify!</h2><br>
+        <div id="form">
+            <form id="formulaire" ACTION="mailto:f.rocher@stu.he-spaak.be" >
+            <div>
+                <label for="nom">Nom et Prénom:</label>
+                <input type="text" id="nom" />
+            </div>
+            <div>
+                <label for="courriel">Adresse mail :</label>
+                <input type="email" id="courriel" />
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message"></textarea>
+            </div><br>
+            <div class="button">
+                <button type="submit" id="formBtn" >Envoyer</button>
+            </div>
+            </form>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
 </body>
