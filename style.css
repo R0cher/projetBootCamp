@@ -1,12 +1,11 @@
 body{
-    margin: 0px;
     padding: 0px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
 }
- 
+
 p{
     font-size: 2.5vh;
 }
@@ -28,6 +27,7 @@ navbar{
     top: 0px;
     display: block;
     text-align: right;
+    z-index: 2;
 }
 
 navbar ul li {
@@ -55,19 +55,19 @@ navbar ul li {
 }
 
 navbar ul li:hover {
-    color: #3D3D3C;
+    color: rgb(255, 255, 244);
     cursor: pointer;
 }
 
 navbar ul li::after {
-	content: '';
+    
 	position: absolute;
 	height: 5px;
 	width: 100%;
 	top: 50%;
 	margin-top: -2px;
 	right: 0;
-	background: #F9F9F9;
+	background: rgb(0, 195, 255);
 	transform: translate3d(-100%,0,0);
 	transition: transform 0.4s;
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -96,8 +96,10 @@ navbar ul li:hover::before {
     height: 10em;
     width: auto;
     margin-top: 90px;
+    margin-bottom: 15px;
 }
 #content{
+    margin: 0px 80px;
     width:100%;
     margin-top: -0.3em;
     padding:0px;
@@ -172,4 +174,20 @@ h2{
 }
 .transpa{
     width:100%;
+}
+
+.ulcss{
+    text-align: left;
+    font-size: 16px;
+
+}
+
+.ImageCSS3{
+    width: 100%;
+    border-radius: 50px;
+    height: 350px;
+}
+
+.textcolonne{
+    float: top;
 }
